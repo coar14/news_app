@@ -19,7 +19,7 @@ class _MyAppState extends State<MyApp> {
     return const MaterialApp(
         debugShowCheckedModeBanner: false,
         home: Scaffold(
-          backgroundColor: aLightWhite,
+          backgroundColor: aLighterWhite,
           body: HomePage(),
         ));
   }
