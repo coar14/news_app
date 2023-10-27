@@ -9,21 +9,3 @@ const Color aBlue = Color(0xff5474fd);
 const Color aLightBlue = Color(0xff83b1ff);
 const Color aLighterBlue = Color(0xffc1d4f9);
 const Color aDarkBlue = Color(0xff19202d);
-
-const fGellix = (
-  fontFamily: 'Gellix',
-  fontWeight: FontWeight.w700,
-);
-
-const fGellixSemiBold = (
-  fontFamily: 'Gellix',
-  fontWeight: FontWeight.w600,
-);
-const fGellixMedium = (
-  fontFamily: 'Gellix',
-  fontWeight: FontWeight.w500,
-);
-const fGellixRegular = (
-  fontFamily: 'Gellix',
-  fontWeight: FontWeight.w400,
-);
