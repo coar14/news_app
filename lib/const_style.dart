@@ -9,3 +9,10 @@ const Color aBlue = Color(0xff5474fd);
 const Color aLightBlue = Color(0xff83b1ff);
 const Color aLighterBlue = Color(0xffc1d4f9);
 const Color aDarkBlue = Color(0xff19202d);
+
+const double borderRad = 16.0;
+
+final kBorder = OutlineInputBorder(
+  borderRadius: BorderRadius.circular(borderRad),
+  borderSide: BorderSide.none,
+);
