@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:intl/intl.dart';
 import 'package:news_app/const_style.dart';
 
@@ -58,6 +59,53 @@ class HomePage extends StatelessWidget {
               ),
             ],
           ),
+          const SizedBox(
+            height: 30,
+          ),
+          Container(
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(borderRad),
+                boxShadow: [
+                  BoxShadow(
+                    color: aDarkBlue.withOpacity(0.052),
+                    offset: const Offset(0.0, 3.0),
+                    blurRadius: 25,
+                    spreadRadius: 0.0,
+                  ),
+                ],
+              ),
+              child: Row(
+                children: [
+                  Expanded(
+                    child: TextField(
+                      style: TextStyle(
+                        fontFamily: 'Gellix',
+                        fontSize: 12,
+                      ),
+                      decoration: InputDecoration(
+                        contentPadding: const EdgeInsets.symmetric(
+                          horizontal: 20,
+                        ),
+                        hintText: 'Search for article...',
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(16.0),
+                          borderSide: BorderSide.none,
+                        ),
+                      ),
+                    ),
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                        color: aBlue,
+                        borderRadius: BorderRadius.circular(16.0)),
+                    child: IconButton(
+                      onPressed: () {},
+                      icon: SvgPicture.asset('assets/icons/search_icon.svg'),
+                    ),
+                  )
+                ],
+              ))
         ],
       ),
     );
