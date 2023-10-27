@@ -5,6 +5,30 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return SafeArea(
+      child: ListView(
+        padding: const EdgeInsets.symmetric(
+          horizontal: 30,
+        ),
+        children: [
+          Row(
+            children: [
+              Container(
+                height: 49,
+                width: 49,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(16),
+                  image: const DecorationImage(
+                    image: AssetImage(
+                      'assets/avatar/male.png',
+                    ),
+                  ),
+                ),
+              )
+            ],
+          )
+        ],
+      ),
+    );
   }
 }
